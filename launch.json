@@ -1,0 +1,23 @@
+{
+  "var": {
+    "$name1": "John",
+    "$name2": "Tom"
+  },
+  "env": {
+    "GO_USER": "$name1"
+  },
+  "proc": {
+    "h": {
+      "cwd": "./hello",
+      "path": "go",
+      "args": ["run", "hello.go"],
+      "color": "yellow"
+    },
+    "g": {
+      "cwd": "./hello",
+      "path": "go",
+      "args": ["run", "hello.go", "$name2"],
+      "color": "cyan"
+    }
+  }
+}
